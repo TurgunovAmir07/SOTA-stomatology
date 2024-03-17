@@ -1,3 +1,4 @@
+//  Menu
 const menuBtn = document.querySelector(".menu__btn");
 const menu = document.querySelector(".menu__list");
 
@@ -21,7 +22,7 @@ dropdownBtn2.addEventListener("click", () => {
   dropdownContent2.classList.toggle("block");
 });
 
-// TEST
+// Animations
 function onEntry(entry) {
   entry.forEach((change) => {
     if (change.isIntersecting) {
@@ -79,3 +80,29 @@ let background = document.querySelectorAll(".bg-animation");
 background.forEach((elm) => {
   bgObserver.observe(elm);
 });
+
+// Up Btn
+const btnUp = {
+  el: document.querySelector(".btn-up"),
+  show() {
+    this.el.classList.remove("btn-up_hide");
+  },
+  hide() {
+    this.el.classList.add("btn-up_hide");
+  },
+  addEventListener() {
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      scrollY > 900 ? this.show() : this.hide();
+    });
+    document.querySelector(".btn-up").onclick = () => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    };
+  },
+};
+
+btnUp.addEventListener();

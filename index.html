@@ -18,9 +18,11 @@
     <header
       class="bg-[#fff] mt-[15px] mr-[15px] ml-[15px] fixed top-0 right-0 left-0 p-[9px_30px] flex z-30 flex justify-between"
     >
-      <img src="./images/logo.jpg" alt="logo" class="w-[261px]" />
-      <nav class="menu">
-        <div class="menu__btn"></div>
+      <img src="./images/logo.jpg" alt="logo" class="w-[221px]" />
+      <nav class="menu px-[40px]">
+        <div class="menu__btn">
+          <img class="" src="./images/burger.svg" alt="burger" />
+        </div>
         <ul class="menu__list">
           <li class="menu__list-item">
             <a class="menu__list-link" href="#">About</a>
@@ -83,26 +85,25 @@
     <!--  -->
     <!--  -->
     <main
-      class="bg-hero bg-cover bg-no-repeat h-[100vh] bg-cover pt-[150px] flex justify-center text-center flex-col px-[74px]"
+      class="bg-hero bg-cover bg-no-repeat h-[100vh] bg-cover pt-[150px] flex justify-center text-center flex-col px-[74px] blackout"
     >
-      <h1 class="text-[25px] text-[#fff] font-alata">
+      <h1 class="text-[25px] text-[#fff] font-alata z-10">
         Experience Excellence with Board Certified Reston Endodontists
       </h1>
       <h2
-        class="text-[40px] sm:text-[40px] md:text-[45px] lg:text-[77px] text-[#fff]"
+        class="text-[40px] sm:text-[40px] md:text-[45px] lg:text-[77px] text-[#fff] z-10"
       >
         CARNG IS OUR SPECIALTY
       </h2>
-      <!-- <div class="text-container">
-        <p class="scroll-text">Пример текста</p>
-      </div> -->
-      <a href="#">Request Appointment</a>
-      <a href="#">
-        <span
-          class="p-[20px_30px] bg-[#48AACB] hover:bg-[#4A8DAF] transition-all duration-500 text-[#fff]"
-          >Call (703) 215-4122</span
-        >
-      </a>
+      <a href="#" class="z-10 mt-[30px]"
+        ><span
+          class="p-[13px_20px] bg-[#48AACB] hover:bg-[#4A8DAF] transition-all duration-500 text-[#fff] font-bold"
+          >Request Appointment</span
+        ></a
+      >
+      <a href="#" class="mt-[40px] z-10"
+        ><h3 class="text-[#fff] text-[23px]">Call (703) 215-4122</h3></a
+      >
     </main>
     <!--  -->
     <!--  -->
@@ -451,21 +452,23 @@
     <article
       class="mx-[15px] grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-[15px]"
     >
-      <section class="relative">
+      <section class="relative blackout">
         <div class="relative">
           <img class="w-[auto]" src="./images/static.jpg" alt="static" />
           <div
             class="p-[50px_40px] absolute bottom-0 flex flex-col gap-[0] overflow-hidden"
           >
             <h2
-              class="text-[#fff] text-[34px] lg:text-[34px] md:text-[45px] sm:text-[36px] element-animation"
+              class="text-[#fff] text-[34px] lg:text-[34px] md:text-[45px] sm:text-[36px] element-animation z-10"
             >
               Meet Dr. Alan Wonhee Lee, DDS, MS
             </h2>
-            <h3 class="text-[18px] text-[#fff] mb-[40px] element-animation">
+            <h3
+              class="text-[18px] text-[#fff] mb-[40px] element-animation z-10"
+            >
               Daring to innovate while delivering the best possible outcomes.
             </h3>
-            <a href="#">
+            <a href="#" class="z-10">
               <span
                 class="p-[15px_30px] bg-[#48AACB] hover:bg-[#4A8DAF] transition-all duration-500 text-[#fff] font-semibold"
               >
@@ -476,19 +479,23 @@
         </div>
         <div class="bg-animation top-0"></div>
       </section>
-      <section class="relative">
+      <section class="relative blackout">
         <div class="relative">
           <img class="w-[auto]" src="./images/static.jpg" alt="static" />
-          <div class="p-[50px_40px] absolute bottom-0 flex flex-col gap-[0]">
+          <div
+            class="p-[50px_40px] absolute bottom-0 flex flex-col gap-[0] overflow-hidden"
+          >
             <h2
-              class="text-[#fff] text-[34px] lg:text-[34px] md:text-[45px] sm:text-[36px] element-animation"
+              class="text-[#fff] text-[34px] lg:text-[34px] md:text-[45px] sm:text-[36px] element-animation z-10"
             >
               Meet Dr. Alan Wonhee Lee, DDS, MS
             </h2>
-            <h3 class="text-[18px] text-[#fff] mb-[40px] element-animation">
+            <h3
+              class="text-[18px] text-[#fff] mb-[40px] element-animation z-10"
+            >
               Daring to innovate while delivering the best possible outcomes.
             </h3>
-            <a href="#">
+            <a href="#" class="z-10">
               <span
                 class="p-[15px_30px] bg-[#48AACB] hover:bg-[#4A8DAF] transition-all duration-500 text-[#fff] font-semibold"
               >
@@ -799,6 +806,7 @@
         </a>
       </div>
     </footer>
+    <div class="btn-up btn-up_hide"></div>
     <!--  -->
     <!--  -->
     <!--  -->
