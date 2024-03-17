@@ -374,9 +374,11 @@ div {
   justify-content: center;
   width: 40px;
   height: 40px;
+  z-index: 99999;
 }
 
 .btn-up::before {
+  z-index: 99999;
   content: "";
   width: 20px;
   height: 20px;
@@ -387,4 +389,5 @@ div {
 
 .btn-up_hide {
   transform: translateX(100%);
+  z-index: 99999;
 }
